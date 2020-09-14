@@ -47,6 +47,7 @@ class AdmobInterstitial(private val registrar: PluginRegistry.Registrar): Method
 
         if (allAds[id]!!.isLoaded) {
           allAds[id]!!.show()
+
         } else result.error(null, null, null)
       }
       "dispose" -> {

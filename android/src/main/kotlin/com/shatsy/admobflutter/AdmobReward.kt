@@ -50,6 +50,7 @@ class AdmobReward(private val registrar: PluginRegistry.Registrar): MethodChanne
 
         if (allAds[id]!!.isLoaded) {
           allAds[id]!!.show()
+
         } else result.error(null, null, null)
       }
       "dispose" -> {
